@@ -1,3 +1,10 @@
 from django.db import models
 
-# Create your models here.
+class Topping(models.Model):
+    name = models.CharField(
+        max_length = 100,
+        required   = True,
+        unique     = True,
+    )
+
+    
